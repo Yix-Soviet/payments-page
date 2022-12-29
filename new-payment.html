@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>New Payment</title>
+   <!-- CSS File -->
+   <link rel="stylesheet" href="css/new-payment.css">
+</head>
+<body>
+   <header class="main-bar">
+      <nav class="navbar">
+         <p class="home"><a href="">Inicio</a></p>
+         <p class="new-payment"><a href="">Añadir nuevo pago</a></p>
+      </nav>
+      <div class="user-info">
+         <img src="./img/blank_user.png" alt="User Image" />
+         <span>
+            <p>User name</p>
+            <a href="">Cerrar Sesión</a>
+         </span>
+      </div>
+   </header>
+   <content class="main">
+      <div class="new-payment">
+         <h2>Añadir nuevo pago</h2>
+         <form action="">
+            <input type="date" name="overdue-date" id="overdue-date" placeholder="Fecha de vencimiento"> <br>
+            <select name="service" id="service">
+               <p>Servicio</p>
+               <option value="netflix">Netflix</option>
+               <option value="hbo+">HBO+</option>
+               <option value="star+">Star+</option>
+            </select> <br>
+            <input type="number" name="amount" id="amount" placeholder="Monto">
+            <input type="button" value="Añadir">
+         </form>
+      </div>
+   </content>
+</body>
+</html>

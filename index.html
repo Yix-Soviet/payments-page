@@ -6,26 +6,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Payments Page</title>
 		<!-- CSS Files -->
-		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/payments.css" />
 	</head>
 	<body>
-		<div class="login-div">
-			<h1>Login</h1>
-			<form action="" method="POST">
-				<input
-					type="email"
-					name="email"
-					id="email-input"
-					placeholder="Email"
-				/><br />
-				<input
-					type="password"
-					name="password"
-					id="password-input"
-					placeholder="Contraseña"
-				/><br />
-				<input type="submit" value="Ingresar" />
-			</form>
-		</div>
+		<header class="main-bar">
+			<nav class="navbar">
+				<p class="home"><a href="">Inicio</a></p>
+				<p class="new-payment"><a href="">Añadir nuevo pago</a></p>
+			</nav>
+			<div class="user-info">
+				<img src="./img/blank_user.png" alt="User Image" />
+				<span>
+					<p>User name</p>
+					<a href="">Cerrar Sesión</a>
+				</span>
+			</div>
+		</header>
+		<content class="main">
+			<div id="payments-made">
+				<h2>Pagos realizados</h2>
+				<ul>
+					<li>
+						<img src="company logo" alt="company logo" />
+						<p>Service</p>
+						<p>Payment date</p>
+						<p>Amount</p>
+					</li>
+				</ul>
+				<p><a href="">Show more</a></p>
+			</div>
+			<div id="payments-overdue">
+				<h2>Pagos vencidos</h2>
+				<ul>
+					<li>
+						<img src="company logo" alt="company logo" />
+						<p>Service</p>
+						<p>Payment date</p>
+						<p>Amount</p>
+						<p>Penalty</p>
+					</li>
+				</ul>
+				<p><a href="">Show more</a></p>
+			</div>
+		</content>
 	</body>
 </html>
