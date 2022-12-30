@@ -2,8 +2,8 @@ const form = document.querySelector("form");
 const email = document.querySelector("#email-input");
 const passwd = document.querySelector("#password-input");
 
-let token_access;
-let token_refresh;
+let token_access = "";
+let token_refresh = "";
 
 form.onsubmit = async (event) => {
 	event.preventDefault();
@@ -32,5 +32,6 @@ form.onsubmit = async (event) => {
 		token_refresh = await data["tokens"]["refresh"];
 	}
 
-   console.log(token_access, token_refresh)
+	console.log(token_access, token_refresh);
+	const saveToken_access = setCookie("token_access", token_access, 1);
 };
